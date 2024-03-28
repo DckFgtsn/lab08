@@ -4,8 +4,8 @@
 int
 main()
 {
-  string name;
-  std::cin >> name;
-  std::cout << "Hello world from " << name << std::endl;
+  string name;//name
+  std::cin >> name;//reading name
+  std::cout << "Hello world from " << name << std::endl;//printing name
   return 0;
 } // end of prog
