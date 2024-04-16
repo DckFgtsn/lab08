@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/tony/DckFgtsn/workspace/projects/lab03/include
+CXX_INCLUDES = -I/home/tony/DckFgtsn/workspace/projects/lab05/include
 
 CXX_FLAGS = -std=gnu++11
 
