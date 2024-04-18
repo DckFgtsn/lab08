@@ -38,7 +38,7 @@ jobs:
             cpp_compiler: clang++
         exclude:
           - os: windows-latest
-            c_compiler: gcc
+            c_compiler: cl
           - os: windows-latest
             c_compiler: clang
           - os: ubuntu-latest
@@ -63,7 +63,6 @@ jobs:
         pwd
         git submodule update --init --recursive
         ls third-party/gtest
-        cl
         cmake -B ${{ steps.strings.outputs.build-output-dir }} \
         -DCMAKE_CXX_COMPILER=${{ matrix.cpp_compiler }} \
         -DCMAKE_C_COMPILER=${{ matrix.c_compiler }} \
