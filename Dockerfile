@@ -2,7 +2,7 @@ FROM ubuntu:22.04
 
 
 RUN apt update
-RUN apt install -yy gcc g++ cmake
+RUN apt install -yy gcc g++ cmake git
 
 COPY . print/
 WORKDIR print
