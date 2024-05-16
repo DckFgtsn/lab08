@@ -7,6 +7,7 @@ RUN apt install -yy gcc g++ cmake
 COPY . print/
 WORKDIR print
 
+RUN git submodule update --init --recursive
 RUN cmake -H. -B_build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=_install
 RUN cmake --build _build
 RUN cmake --build _build --target install
