@@ -57,7 +57,6 @@ jobs:
     - name: Docker
       run: |
         docker build -t logger .
-        docker run -it -v "$(pwd)/logs/:/home/logs/" logger
 
     - name: Configure CMake
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
